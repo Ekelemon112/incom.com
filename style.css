@@ -1,0 +1,1020 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+/* .labels{
+    position: absolute;
+    width: 45px;
+    
+    height: 22px;
+    top: 20px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+.labels:before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: -1px;
+    top: -1px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #fff;
+    transition: 0.4s;
+}
+
+.labels.active::before{
+    left: 24px;
+    background: #fff;
+}
+
+body.night{
+    background: #fff;
+    color: #000;
+} */
+
+section{
+    font-family: sans-serif;
+    background: url(./incomm/1.jpg) rgba(17, 17, 17, 0.637);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 100vh;
+}  
+
+.hero{
+    /* position: relative; */
+    display: flex;
+    padding: 1rem;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1{
+    padding: 0.3rem;
+    font-size: 25px;
+    color: blue;
+}
+
+.hero span{
+    font-size: 25px;
+    color: orangered;
+    text-decoration: none;
+    background: none;
+}
+
+.hero ul{
+    display: inline-flex;
+    gap: 2rem;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.hero ul li a{
+    text-decoration: none;
+    color: #eee;
+    padding: 0.5rem ;
+}
+
+.hero ul li a:hover{
+    background: rgba(235, 231, 230, 0.338);
+    animation-name: textzoom;
+    animation-duration: 5s;
+}
+
+/* @keyframes textzoom{
+    0%{
+        font-size: 60%;
+    }
+    100%
+    {
+        font-size: 80%;
+    }
+} */
+
+.hero a i{
+    font-size: 40px;
+    padding: 0.3rem;
+    color: #fff;
+    background: #000;
+}
+
+.hero i:hover{
+    color: orangered;
+    transition: .5s;
+}
+
+.hero .bx-menu{
+    display: none;
+}
+
+
+.search{
+    padding: 5px;
+    width: 250px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    background: #eee;
+    color: #000;
+    outline: none;
+}
+
+
+
+.main-body{
+    padding: 12.4rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.main-body h2{
+    padding: 0.5rem;
+    color: #fff;
+    font-size: 35px;
+}
+
+.main-body p{
+    font-weight: 600;
+    color: #fff;
+}
+
+.main-body img{
+    padding: 0.5rem;
+    width: 200px;
+}
+
+.main-body h3{
+    display: none;
+}
+
+.media{
+    display: none;
+    position: absolute;
+    display: flex;
+    margin-left: 10%;
+    bottom: 10%;
+    align-items: center;
+}
+
+.social i{
+    font-size: 2rem;
+    padding: 0.3rem;
+    border-radius: 10px;
+    background: #0072ff;
+    color: #fff;
+}
+
+.media a i:hover{
+    background-color: #000;
+    color: red;
+}
+
+.card{
+    display: none;
+    gap: 1rem;
+    align-items: center;
+    
+}
+
+.card p{
+    color: #fff;
+    font-size: 25px;
+}
+
+.card img{
+    height: 50px;
+    width: 110px;
+}
+
+.card img:hover{
+    animation-name: t;
+    transition: .5s;
+}
+
+
+.product{
+    padding: 1rem;
+    background: #fff;
+    justify-content: center;
+}
+
+
+
+.bxcard{
+    display: flex;
+    padding: 1rem;
+    gap: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.card-list{
+    padding: 2rem;
+    background: #fff;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 6px 8px rgba(18, 209, 219, 0.978);
+}
+
+.card-list a{
+    text-decoration: none;
+    color: #000;
+}
+
+.card-list img{
+    padding: 0.5rem;
+    height: 200px;
+    width:180px;
+    border-radius: 1rem;
+}
+
+.card-list h2{
+    font-size: 19px;
+    color: #0072ff;
+}
+
+span{
+    color: #000;
+    background: aqua;
+    text-decoration: line-through;
+}
+
+.card-list p{
+    font-size: 15px;
+}
+
+
+.card-list:hover{
+    transition: .3s;
+    background: rgba(255, 140, 0, 0.408);
+}
+
+.show{
+    display: flex;
+    padding: 1rem;
+    gap: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.card-show{
+    padding: 2rem;
+    background: #fff;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 6px 8px rgba(18, 209, 219, 0.978);
+}
+
+.card-show a{
+    text-decoration: none;
+    color: #000;
+}
+
+.card-show img{
+    padding: 0.5rem;
+    height: 200px;
+    width: 170px;
+    border-radius: 1rem;
+}
+
+.card-show h2{
+    font-size: 15px;
+    color: #0072ff;
+}
+
+
+.card-show:hover{
+    transition: .3s;
+    background: rgba(255, 140, 0, 0.408);
+}
+
+.menu{
+    display: flex;
+    padding: 1rem;
+    gap: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.card-menu{
+    padding: 2rem;
+    background: #fff;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 6px 8px rgba(18, 209, 219, 0.978);
+}
+
+.card-menu a{
+    text-decoration: none;
+    color: #000;
+}
+
+.card-menu img{
+    padding: 0.5rem;
+    height: 200px;
+    width: 180px;
+    border-radius: 1rem;
+}
+
+.card-menu h2{
+    font-size: 19px;
+    color: #0072ff;
+}
+
+.card-menu p{
+    font-size: 15px;
+}
+
+
+.card-menu:hover{
+    transition: .3s;
+    background: rgba(255, 140, 0, 0.408);
+}
+
+.main{
+    display: flex;
+    padding: 1rem;
+    gap: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.card-main{
+    padding: 2rem;
+    background: #fff;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 6px 8px rgba(18, 209, 219, 0.978);
+}
+
+.card-main a{
+    text-decoration: none;
+    color: #000;
+}
+
+.card-main img{
+    padding: 0.5rem;
+    height: 200px;
+    width:180px;
+    border-radius: 1rem;
+}
+
+.card-main h2{
+    font-size: 15px;
+    color: #0072ff;
+}
+
+.card-main p{
+    font-size: 15px;
+}
+
+span{
+    color: #000;
+    background: aqua;
+    text-decoration: line-through;
+}
+
+
+.card-main:hover{
+    transition: .3s;
+    background: rgba(255, 140, 0, 0.408);
+}
+
+.label{
+    padding: 2rem;
+    line-height: 20px;
+    font-size: 30px;
+}
+
+.label i{
+    color: gold;
+}
+
+.label i:hover{
+    transition: .7s;
+    color: rgb(217, 236, 5);
+}
+
+.text1{
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+    color: #fff;
+    background: #000;
+}
+
+.submit{
+    color: #0072ff;
+}
+
+.main-bod{
+    padding: 1rem;
+}
+
+
+.main-bod h3{
+    color: #000;
+    font-size: 35px;
+}
+
+.main-table{
+    display: flex;
+    padding: 1rem;
+    text-align: center;
+    gap: 2rem;
+}
+
+.bxtext{
+    padding: 2rem;
+    background: #fff;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 6px 8px rgba(18, 209, 219, 0.978);
+}
+
+.bxtext img{
+    width: 200px;
+    /* height: 200px; */
+    border-radius: 10px;
+}
+
+.bxtext a{
+    text-decoration: none;
+    color: #000;
+}
+
+.bxtext h4{
+    font-size: 25px;
+}
+
+.bxtext h5{
+    color: #000;
+    text-decoration: underline;
+}
+
+.bxtext i{
+    color: gold;
+    font-size: 20px;
+}
+
+.bxtext:hover{
+    transition: .3s;
+    background: blue;
+}
+
+.company{
+    display: flex;
+    padding: 2rem;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    border: #000;
+    background: #000;
+}
+
+.bxchart {
+    text-align: center;
+}
+
+.bxchart h5{
+    font-size: 40px;
+    color: #fff;
+}
+
+.bxchart p{
+    color: #fff;
+    width: 400px;
+}
+
+.picture{
+    border-radius: 60rem;
+}
+
+.picture{
+    text-align: center;
+}
+
+.picture img{
+    width: 460px;
+    height: 460px;
+    border-radius: 60rem;
+    border: 5px solid #fff;
+}
+
+.picture h6{
+    padding: 0.5rem;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.picture h6 a{
+    color: #fff;
+}
+
+.picture h6 a:hover{
+    transition: .5s;
+    color: darkred;
+}
+
+.last{
+    padding: 1rem;
+    background: #000000e1;
+    justify-content: center;
+}
+
+.last-card{
+    display: flex;
+    gap: 4rem;
+    color: #fff;
+    justify-content: center;
+}
+
+.sql{
+    display: flex;
+    gap: 4rem;
+    color: #fff;
+    justify-content: center;
+}
+
+.snm p{
+    line-height: 30px;
+}
+
+.snm ul{
+    font-size: 15px;
+    line-height: 16px;
+    list-style-type: none;
+}
+
+.snm ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.anw{
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    gap: 15rem;
+    line-height: 5px;
+}
+
+.bnw{
+    text-align: center;
+}
+
+.bnw p{
+    color: #fff;
+}
+
+.bnw i{
+    font-size: 40px;
+    color: #fff;
+}
+
+.bnw img{
+    padding-top: 2rem;
+    color: #fff;
+    height: 70px;
+    width: 70px;
+}
+
+.code P{
+    padding: 0.5rem;
+    color: #fff;
+}
+
+.code img{
+    width: 100px;
+}
+
+
+
+@media only screen and (max-width: 480px){
+    body{
+        overflow-x: hidden;
+    }
+    section{
+        background: url(./incomm/xzb.jpg) rgba(17, 17, 17, 0.809);
+        background-position: center;
+        background-blend-mode: darken;
+        height: 100vh;
+    }
+    .hero h1{
+        font-size: 25px;
+    }
+    .hero ul li{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: 0;
+        right: -130px;
+        width: 130px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    .hero ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .bx-menu{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .hero .bx-menu{
+        display: block;
+        color: #fff;
+        font-size: 50px;
+    }
+    .main-body{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        top: 30%;
+        padding: 50px;
+        /* width: 200px; */
+        text-align: center;
+    }
+    .main-body h2{
+    display: none;
+    }
+    .main-body p{
+        display: none;
+    }
+    .main-body h3{
+        width: 200px;
+    }
+    .main-body img{
+        display: none;
+    }
+    .social{
+        position: absolute;
+        display: flex;
+        gap: 5px;
+        top: 70%;
+        text-align: center;
+        padding-left: 10%;
+    }
+    .card{
+        display: none;
+    }
+    .bxcard{
+        display: flex;
+        flex-direction: column;
+    }
+    .show{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .main-table{
+        flex-direction: column;
+    }
+    .company{
+        flex-direction: column;
+        background: #eee;
+        color: #000;
+    }
+    .company h5{
+        color: #000;
+    }
+    .company p{
+        font-size: 15px;
+        color: #000;
+        width: 300px;
+        text-align: left;
+    }
+    .company img{
+        height: 350px;
+        width: 350px;
+    }
+    .company h6{
+        color: #000;
+    }
+    .company h6 a{
+        color: #000;
+        transition: 0.5s;
+    }
+    .company h6 a:hover{
+        color: aquamarine;
+    }
+    .last{
+        flex-direction: column;
+    }
+    .last-card{
+        padding: 10px;
+        flex-direction: column;
+    }
+    .snm ul li a{
+        line-height: 20px;
+        letter-spacing: 3%;
+        color: aquamarine;
+    }
+    .anw{
+        flex-direction: column;
+        padding: 0;
+    }
+    .bnw{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 760px){
+    body{
+        overflow-x: hidden;
+    }
+    section{
+        background: url(./incomm/xzb.jpg) rgba(17, 17, 17, 0.753);
+        background-position: center;
+        background-blend-mode: darken;
+        height: 100vh;
+    }
+    .hero {
+        padding: 30px;
+    }
+    .hero h1{
+        font-size: 20px;
+    }
+    .hero h1 span{
+        background: none;
+    }
+    .hero ul{
+        display: none;
+    }
+    .hero .bx-menu{
+        display: block;
+        color: #fff;
+        font-size: 50px;
+    }
+    .main-body{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        top: 30%;
+        padding: 50px;
+        width: 200px;
+        text-align: center;
+        line-height: 100px;
+    }
+    .main-body h2{
+        display: none;
+        font-size: 28px;
+    }
+    .main-body p{
+        display: none;
+        line-height: 30px;
+        font-weight: 100;
+        width: 600px;
+        font-size: 19px;
+        text-align: center;
+    }
+
+    .main-body img{
+        display: none;
+    }
+    .social{
+        position: absolute;
+        display: flex;
+        gap: 10px;
+        top: 70%;
+        text-align: center;
+        padding-left: 30%;
+    }
+    .social a i{
+        background: none;
+    }
+    .card{
+        display: none;
+    }
+    .bxcard{
+        display: flex;
+        flex-direction: column;
+    }
+    .show{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .main-table{
+        flex-direction: column;
+    }
+    .company{
+        flex-direction: column;
+        background: #eee;
+        color: #000;
+    }
+    .company h5{
+        color: #000;
+    }
+    .company p{
+        font-size: 15px;
+        color: #000;
+        width: 300px;
+        text-align: left;
+    }
+    .company img{
+        height: 350px;
+        width: 350px;
+    }
+    .company h6{
+        color: #000;
+    }
+    .company h6 a{
+        color: #000;
+        transition: 0.5s;
+    }
+    .company h6 a:hover{
+        color: aquamarine;
+    }
+    .last{
+        flex-direction: column;
+    }
+    .last-card{
+        padding: 10px;
+        flex-direction: column;
+    }
+    .snm ul li a{
+        line-height: 20px;
+        letter-spacing: 3%;
+        color: aquamarine;
+    }
+    .anw{
+        flex-direction: column;
+        padding: 0;
+    }
+    .bnw{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 1130px){
+    body{
+        overflow-x: hidden;
+    }
+    section{
+        background: url(./incomm/xzb.jpg) rgba(17, 17, 17, 0.753);
+        background-position: center;
+        background-blend-mode: darken;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    .hero {
+        padding: 30px;
+    }
+    .hero h1{
+        font-size: 22px;
+    }
+    .hero h1 span{
+        font-size: 22px;
+        background: none;
+    }
+    .hero ul{
+        display: none;
+    }
+    .hero .bx-menu{
+        display: block;
+        color: #fff;
+        font-size: 40px;
+    }
+    .main-body{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        top: 30%;
+        padding: 50px;
+        margin: 0;
+        text-align: center;
+        line-height: 100px;
+    }
+    .main-body h2{
+        font-size: 25px;
+    }
+    .main-body p{
+        display: none;
+        line-height: 30px;
+        font-weight: 100;
+        font-size: 13px;
+        text-align: center;
+    }
+    .main-body h3{
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .main-body img{
+        display: none;
+    }
+    .social{
+        position: absolute;
+        display: flex;
+        gap: 10px;
+        top: 70%;
+        text-align: center;
+        padding-left: 30%;
+    }
+    .social a i{
+        background: none;
+    }
+    .card{
+        display: none;
+    }
+    .bxcard{
+        display: flex;
+        flex-direction: column;
+    }
+    .show{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .main-table{
+        flex-direction: column;
+    }
+    .company{
+        flex-direction: column;
+        background: #eee;
+        color: #000;
+    }
+    .company h5{
+        color: #000;
+    }
+    .company p{
+        font-size: 15px;
+        color: #000;
+        width: 300px;
+        text-align: left;
+    }
+    .company img{
+        height: 350px;
+        width: 350px;
+    }
+    .company h6{
+        color: #000;
+    }
+    .company h6 a{
+        color: #000;
+        transition: 0.5s;
+    }
+    .company h6 a:hover{
+        color: aquamarine;
+    }
+    .last{
+        flex-direction: column;
+    }
+    .last-card{
+        padding: 10px;
+    }
+    .sql{
+        flex-direction: column;
+        gap: 40%;
+    }
+    .snm ul li a{
+        line-height: 20px;
+        letter-spacing: 3%;
+        color: aquamarine;
+    }
+    .anw{
+        flex-direction: column;
+        padding: 0;
+    }
+    .bnw{
+        display: none;
+    }
+}
